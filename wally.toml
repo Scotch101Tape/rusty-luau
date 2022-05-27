@@ -1,0 +1,9 @@
+[package]
+name = "scotch101tape/rusty-luau"
+description = "Rust constructs in idiomatic Luau"
+version = "0.1.0"
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]

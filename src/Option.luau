@@ -1,3 +1,5 @@
+--!strict
+
 local Option = {}
 
 export type Option<T> = T?
@@ -12,11 +14,11 @@ function Option.expect<T>(option: Option<T>, error_message: string): T
     return option
 end
 
-function Option.is_none<T>(option: Option<T>): bool
+function Option.is_none<T>(option: Option<T>): boolean
     return option == nil
 end
 
-function Option.is_some<T>(option: Option<T>): bool
+function Option.is_some<T>(option: Option<T>): boolean
     return option ~= nil
 end
 
